@@ -1,0 +1,21 @@
+.dsmovie-form-container {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.dsmovie-form {
+    width: calc(100% - 20px);
+}
+
+.dsmovie-form-group {
+    margin-bottom: 20px;
+}
+
+.dsmovie-movie-card-image {
+    margin-top: 40px;
+}
+
+.dsmovie-card-bottom-container {
+    margin-bottom: 10px;
+}

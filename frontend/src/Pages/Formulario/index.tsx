@@ -23,11 +23,11 @@ function Formulario() {
                     <div className="form-group dsmovie-form-group">
                         <label htmlFor="score">Informe a sua avaliação</label>
                         <select className="form-control" id="score">
-                            <option value="">1</option>
+                            <option>1</option>
                             <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                            <option value="">5</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
                         </select>
                     </div>
                     <div className="dsmovie-form-btn-container">
