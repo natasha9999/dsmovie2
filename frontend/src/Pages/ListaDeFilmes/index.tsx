@@ -28,6 +28,12 @@ function ListaDeFilmes() {
         });
     }, [pageNumber]);
 
+
+    // handlePageChange - muda as páginas
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
+    }
+
     return (
         <>
             <div className="container">
@@ -40,7 +46,7 @@ function ListaDeFilmes() {
                     )}
                 </div>
             </div>
-            <Paginacao />
+            <Paginacao page={page} onChange={handlePageChange}/>
         </>
     );
 }
