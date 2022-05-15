@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 import MovieScore from 'Components/MovieScore';
 import './styles.css';
+import { Movie } from "types/movie";
 
-function MovieCard() {
+type Props = {movie: Movie;}
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/iM1hlVGZ5Qwn3gO6ewTszY7OrLY.jpg",
-        title: "Doutor Estranho",
-        count: 2,
-        score: 4.5
-    };
+function MovieCard( { movie } : Props ) {
 
     return (
         <div>
@@ -18,7 +13,6 @@ function MovieCard() {
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-
 
                 <Link to={`/formulario/${movie.id}`}>
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
